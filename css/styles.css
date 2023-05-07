@@ -31,6 +31,9 @@ ul {
   padding: 0;
   display: flex;
 }
+
+/* Logo */
+
 .WebStudio {
   font-family: "Raleway";
   font-weight: 700;
@@ -40,6 +43,8 @@ ul {
   color: var(--brand-color);
   margin-right: 93px;
 }
+
+/* menu */
 
 .button {
   font-family: "Roboto";
@@ -58,6 +63,20 @@ ul {
   color: var(--brand-color);
 }
 
+/* contacto*/
+
+.contacto {
+  display: inline-block;
+}
+
+.contacto a {
+  float: right;
+}
+
+.contacto a:hover svg {
+  fill: #2196F3;
+}
+
 .date {
   font-family: "Roboto";
   font-weight: 500;
@@ -69,25 +88,21 @@ ul {
   color: var(--brand-color);
 }
 
-.contacto {
-  display: inline-block;
-}
-
-.contacto a {
-  float: right;
-}
-
 .icon-email {
   height: 16px;
   width: 16px;
   margin-right: 10px;
+  fill: #757575;
 }
 
 .icon-phone {
   height: 16px;
   width: 16px;
   margin-right: 10px;
+  fill: #757575;
 }
+
+/* Nuestro contenido seccion */
 
 .background {
   height: 600px;
@@ -133,6 +148,8 @@ ul {
   color: #ffffff;
 }
 
+/* beneficios seccion */
+
 .benefits-container {
   display: flex;
   padding-top: 95px;
@@ -145,7 +162,6 @@ ul {
   text-transform: uppercase;
   color: #212121;
 }
-
 .text {
   display: block;
   font-family: "Roboto";
@@ -154,6 +170,8 @@ ul {
   /* or 171% */
   color: #757575;
 }
+
+/* A que nos dedicamos seccion */
 
 .secondtitle {
   font-family: "Roboto";
@@ -165,7 +183,6 @@ ul {
   padding-top: 94px;
   padding-bottom: 50px;
 }
-
 .images {
   display: flex;
   flex-wrap: wrap;
@@ -174,7 +191,6 @@ ul {
 .image-container {
   position: relative;
 }
-
 .image-title {
   position: absolute;
   bottom: 0;
@@ -187,6 +203,8 @@ ul {
   margin: 0;
 }
 
+/* Nuestro equipo */
+
 .background-team {
   background: #f5f4fa;
 }
@@ -195,7 +213,6 @@ ul {
   display: flex;
   justify-content: space-evenly;
 }
-
 .team-images {
   box-sizing: border-box;
   width: 270px;
@@ -207,7 +224,6 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .person-image {
   display: block;
 }
@@ -219,12 +235,9 @@ ul {
   line-height: 19px;
   text-align: center;
   /* identical to box height */
-
   letter-spacing: 0.03em;
-
   color: #212121;
 }
-
 .description {
   font-family: "Roboto";
   font-weight: 400;
@@ -237,31 +250,47 @@ ul {
 
 .social-icons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 0px;
+  padding: 0px 32px;
 }
 
 .icon-redes {
-  height: 44px;
-  width: 44px;
+  height: 20px;
+  width: 20px;
 }
+
+.logo-redes {
+  display: flex;
+  width: 44px;
+height: 44px;
+align-items: center;  
+justify-content: center;
+fill: #AFB1B8;
+border-radius: 50px;
+}
+.logo-redes:hover {
+  background-color: var(--brand-color);
+
+}
+
+/* Nuestros clientes */
 
 .customers {
   padding-bottom: 94px;
   display: flex;
   justify-content: space-evenly;
 }
+
 .icon-items {
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 94px;
 }
+
 .icon-customer {
   box-sizing: border-box;
   width: 170px;
   height: 81px;
-  left: 215px;
-  top: 2447px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -270,22 +299,26 @@ ul {
   margin-top: 14px;
   margin-left: 32px;
   fill: #afb1b8;
+  /* Color inicial del ícono */
 }
 
-/* reviar hover*/
-.icon-svg:hover {
+.icon-items:hover .icon-svg {
   fill: var(--brand-color);
+  /* Color al hacer hover */
 }
+.icon-customer:hover {
+  border-color: var(--brand-color);
+}
+
+/* footer seccion*/
 
 .footer {
   background: #2f303a;
 }
-
 .backgrounddate {
   height: 252px;
   padding: 95px 0;
 }
-
 address {
   font-style: normal;
 }
@@ -296,21 +329,17 @@ address {
   /* or 171% */
   color: #ffffff;
 }
-
 .style {
   display: flex;
   flex-direction: column;
 }
-
 .email {
   font-family: "Roboto";
   font-weight: 400;
   line-height: 24px;
   /* or 171% */
-
   color: rgba(255, 255, 255, 0.6);
 }
-
 .secondphone {
   font-family: "Roboto";
   font-weight: 400;
@@ -321,12 +350,12 @@ address {
 }
 
 .find {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: -90px;
+ display: flex;
+ flex-direction: column;
+ align-content:space-evenly;
+margin-left: 130px;
+margin-top: -45px;
 }
-
 .find-title {
   font-family: "Roboto";
   font-weight: 700;
@@ -334,22 +363,36 @@ address {
   color: #ffffff;
 }
 
-.find-redes {
-  align-items: center;
+.icon-find {
+  display: flex ;
+  width: 44px;
   height: 44px;
-    width: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      padding: 10px;
-      margin: 10px;
-     }
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5px;
+}
+.find-redes {
+ height: 20px;
+ width: 20px;
+}
+.icon-find:hover {
+  background-color: var(--brand-color);
+}  
+
+.address-find-container {
+  display: flex;
+ }
+
+/* Portafolio */
+/* Botones menu seccion */
 
 .buttonmenu {
   display: flex;
   padding: 24px;
   justify-content: center;
 }
-
 .menu {
   font-family: "Roboto";
   font-weight: 500;
@@ -368,29 +411,28 @@ address {
   cursor: pointer;
 }
 
+/* Imagenes */
+
 .picture-section {
   display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-    padding-bottom: 90px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  padding-bottom: 90px;
 }
-
 .picture {
   padding-right: 24px;
   padding-left: 24px;
 }
 .picture-card {
   box-sizing: border-box;
-    background: #ffffff;
-    border: 1px solid #eeeeee;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
-
 .picture-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .poster {
   display: block;
 }
