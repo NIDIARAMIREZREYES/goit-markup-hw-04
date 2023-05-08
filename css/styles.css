@@ -65,16 +65,19 @@ ul {
 
 /* contacto*/
 
-.contacto {
-  display: inline-block;
+.infocontact {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacto a {
   float: right;
 }
 
-.contacto a:hover svg {
-  fill: #2196F3;
+.contacto a:hover,
+.contacto a:hover + a svg {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .date {
@@ -83,9 +86,6 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #757575;
-}
-.date:hover {
-  color: var(--brand-color);
 }
 
 .icon-email {
@@ -98,7 +98,8 @@ ul {
 .icon-phone {
   height: 16px;
   width: 16px;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 25px;
   fill: #757575;
 }
 
@@ -151,7 +152,7 @@ ul {
 .benefits-container {
   display: flex;
   padding-top: 95px;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .title {
   font-family: "Roboto";
@@ -159,7 +160,9 @@ ul {
   line-height: 1.1;
   text-transform: uppercase;
   color: #212121;
+  margin: 24px;
 }
+
 .text {
   display: block;
   font-family: "Roboto";
@@ -167,6 +170,7 @@ ul {
   line-height: 1.7;
   /* or 171% */
   color: #757575;
+  margin: 24px;
 }
 
 /* A que nos dedicamos seccion */
@@ -260,15 +264,17 @@ ul {
 .logo-redes {
   display: flex;
   width: 44px;
-height: 44px;
-align-items: center;  
-justify-content: center;
-fill: #AFB1B8;
-border-radius: 50px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  border-radius: 50px;
 }
 .logo-redes:hover {
   background-color: var(--brand-color);
-
+}
+.logo-redes:hover {
+  fill: #eeeeee;
 }
 
 /* Nuestros clientes */
@@ -284,7 +290,6 @@ border-radius: 50px;
   justify-content: space-evenly;
   padding-bottom: 94px;
 }
-
 .icon-customer {
   box-sizing: border-box;
   width: 170px;
@@ -292,14 +297,12 @@ border-radius: 50px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
 .icon-svg {
   margin-top: 14px;
   margin-left: 32px;
   fill: #afb1b8;
   /* Color inicial del ícono */
 }
-
 .icon-items:hover .icon-svg {
   fill: var(--brand-color);
   /* Color al hacer hover */
@@ -321,6 +324,7 @@ address {
   font-style: normal;
 }
 .address {
+  display: flex;
   font-family: "Roboto";
   font-weight: 400;
   line-height: 1.7;
@@ -348,11 +352,10 @@ address {
 }
 
 .find {
- display: flex;
- flex-direction: column;
- align-content:space-evenly;
-margin-left: 130px;
-margin-top: -45px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  margin-left: 130px;
 }
 .find-title {
   font-family: "Roboto";
@@ -362,7 +365,7 @@ margin-top: -45px;
 }
 
 .icon-find {
-  display: flex ;
+  display: flex;
   width: 44px;
   height: 44px;
   align-items: center;
@@ -372,16 +375,16 @@ margin-top: -45px;
   margin: 5px;
 }
 .find-redes {
- height: 20px;
- width: 20px;
+  height: 20px;
+  width: 20px;
 }
 .icon-find:hover {
   background-color: var(--brand-color);
-}  
+}
 
 .address-find-container {
   display: flex;
- }
+}
 
 /* Portafolio */
 /* Botones menu seccion */
@@ -407,6 +410,8 @@ margin-top: -45px;
   background-color: var(--brand-color);
   color: #ffffff;
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Imagenes */
@@ -433,17 +438,4 @@ margin-top: -45px;
 }
 .poster {
   display: block;
-}
-.title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  margin: 24px;
-}
-.text {
-  color: #757575;
-  font-size: 16px;
-  line-height: 1.9;
-  margin: 24px;
 }
