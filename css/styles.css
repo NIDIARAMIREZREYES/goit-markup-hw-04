@@ -111,7 +111,7 @@ ul {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/Imagebackground.jpg");
+    url("/images/imagebackground.jpg");
 }
 .hero-container {
   display: flex;
